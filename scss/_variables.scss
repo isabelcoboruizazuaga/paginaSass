@@ -1,0 +1,40 @@
+//fuentes
+
+//colores
+$colores:(
+    "primary":rgb(12, 12, 11),
+    "secondary":#ffe,
+    "terciary":rgb(217, 181, 154),
+    "quaternary":rgb(177, 28, 28)
+);
+
+//funcion con map-get color
+@function get-color ($color-name){
+    @return map-get($colores,$color-name);
+}
+
+//map de font sizes
+$fonts:(
+    "xxl":6rem,
+    "xl":3rem,
+    "l":2.5,
+    "m":2rem,
+    "s":1.8rem,
+    "xs":1.6rem
+);
+
+//funcion con map-get size
+@function color ($font-size){
+    @return map-get($fonts,$font-size);
+}
+
+$font-weights:(
+    
+"light": 300,
+"regular":400,
+"bold":700
+)
+
+//map-get weight
+
+//fuente principal

@@ -1,0 +1,33 @@
+.section{
+    grid-column: 1 /11;
+    grid-row: 2/10;
+    @include flex(row, center,space-evenly);
+    flex-basis: 100%;
+
+    .card{
+        @include flex(row,start,space-between);
+        flex-basis: 25em;
+
+        @extend %borde-shadow;
+        margin-bottom: 2rem;
+
+
+        @for $i from 0 to 7 {
+            &:nth-child(#{$i}) {
+              @include random-rgb();
+            }
+          }
+
+
+        &-imgs{
+            width:20%;
+            align-self: center;
+        }
+        &-info{
+            width: 80%;
+        }
+
+    }
+
+}
+

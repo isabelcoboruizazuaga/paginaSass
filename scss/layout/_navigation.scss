@@ -1,0 +1,11 @@
+.first-nav{ 
+    @include navigation;
+    grid-column: 7/10;
+    grid-row: 1/2;
+}
+
+.second-nav{ 
+    @include navigation;
+    grid-column: 1/10;
+    grid-row: 3/4;
+}

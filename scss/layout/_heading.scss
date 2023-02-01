@@ -1,0 +1,10 @@
+.heading{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    text-align: center;
+    &-text{ 
+        font-family:'Courier New', Courier, monospace;
+        font-size: size(xl);
+        color: black;
+    }
+}
